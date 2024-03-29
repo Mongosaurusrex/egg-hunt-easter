@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>EGG HUNT</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .triangle {
+            padding-top: 100px;
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+
+            border-bottom: 25px solid red;
+        }
+
+        .success {
+            padding-top: 200px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="triangle"></div>
+    <div class="success">The second floor, first(?) door</div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+<script>    const jsConfetti = new JSConfetti();
+    jsConfetti.addConfetti();</script>
+
+</html>
